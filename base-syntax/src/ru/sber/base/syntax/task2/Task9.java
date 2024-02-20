@@ -10,7 +10,24 @@ public class Task9 {
         int b = 90;
         char c = (char) (Math.random()*(b - a) + a);
         System.out.println(c);
-//        while (true){
-//        }
+
+        while (true){
+            System.out.print("Введите букву: ");
+            String d = in.next().toUpperCase();
+            char answer = d.charAt(0);
+            if ((answer > 'Z') | (answer < 'A')){
+                System.out.println("Введён недопустимый символ");
+                continue;
+            }
+
+            if (answer > c) {
+                System.out.println("Ищи букву, которая перед ней в алфавите");
+            } else if (answer < c) {
+                System.out.println("Ищи букву, которая после неё в алфавите");
+            } else {
+                System.out.println("Верно!");
+                break;
+            }
+        }
     }
 }
