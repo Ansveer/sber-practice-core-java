@@ -3,22 +3,23 @@ public class Task6 {
     public static void main(String[] args){
         System.out.println("Случайные числа");
 
-        int[] arr = new int[100];
+        int len = 100;
+        int[] arr = new int[len];
         int a = 0;
         int b = 1000;
-        for (int i = 0; i < 100; i++){
-            arr[i] = a + (int) (Math.random() * b);
+        for (int i = 0; i < len; i++){
+            arr[i] = a + (int) (Math.random() * (b + 1));
         }
 
-        System.out.println("Максимальное значение = " + max_num(arr) + " находится в элементе под индексом "
-                        + arr_max_index(arr, max_num(arr)));
-        System.out.print("Среднее значение = " + average_value(arr));
+        System.out.println("Максимальное значение = " + max_num(arr, len) + " находится в элементе под индексом "
+                        + arr_max_index(arr, max_num(arr, len), len));
+        System.out.print("Среднее значение = " + average_value(arr, len));
 
     }
-    static int max_num(int[] arr){
+    static int max_num(int[] arr, int len){
         int max = 0;
 
-        for (int i = 0; i < 100; i++){
+        for (int i = 0; i < len; i++){
             if (arr[i] > max){
                 max = arr[i];
             }
@@ -26,10 +27,10 @@ public class Task6 {
         return max;
     }
 
-    static int arr_max_index(int[] arr, int max) {
+    static int arr_max_index(int[] arr, int max, int len) {
         int index = 0;
 
-        for (int i = 0; i < 100; i++){
+        for (int i = 0; i < len; i++){
             if (max == arr[i]){
                 index = i;
             }
@@ -37,12 +38,12 @@ public class Task6 {
         return index;
     }
 
-    static int average_value(int[] arr){
+    static int average_value(int[] arr, int len){
         int sum = 0;
 
-        for (int i = 0; i < 100; i++){
+        for (int i = 0; i < len; i++){
             sum += arr[i];
         }
-        return sum / 100;
+        return sum / len;
     }
 }

@@ -9,7 +9,7 @@ public class Task8 {
         int a = 0;
         int b = 1000;
         for (int i = 0; i < len; i++){
-            arr[i] = a + (int) (Math.random() * b);
+            arr[i] = a + (int) (Math.random() * (b + 1));
         }
         System.out.println(Arrays.toString(arr));
 

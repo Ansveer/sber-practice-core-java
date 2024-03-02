@@ -9,7 +9,7 @@ public class Task5 {
         System.out.print("Введите количество чисел: ");
         int num = in.nextInt();
 
-        if ((num >= 2) & (num <= 100)){
+        if ((num >= 2) && (num <= 100)){
             int[] arr = new int[num];
             arr[0] = 0;
             arr[1] = 1;

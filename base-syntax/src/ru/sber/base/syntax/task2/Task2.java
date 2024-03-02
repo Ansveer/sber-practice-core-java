@@ -9,7 +9,7 @@ public class Task2 {
         System.out.print("Введите количество чисел: ");
         int num = in.nextInt();
 
-        if ((num >= 1) & (num <= 500)){
+        if ((num >= 1) && (num <= 500)){
             for (int i = 1; i < (num + 1); i++){
                 System.out.print(7*i);
                 System.out.print(' ');

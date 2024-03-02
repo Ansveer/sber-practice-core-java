@@ -15,7 +15,7 @@ public class Task9 {
             System.out.print("Введите букву: ");
             String d = in.next().toUpperCase();
             char answer = d.charAt(0);
-            if ((answer > 'Z') | (answer < 'A')){
+            if ((answer > 'Z') || (answer < 'A')){
                 System.out.println("Введён недопустимый символ");
                 continue;
             }
