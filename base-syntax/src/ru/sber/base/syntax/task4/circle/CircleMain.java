@@ -1,7 +1,5 @@
 package ru.sber.base.syntax.task4.circle;
 
-import ru.sber.base.syntax.task4.circle.Circle;
-
 public class CircleMain {
     public static void main(String[] args) {
         Circle circle = new Circle(5, "Black");

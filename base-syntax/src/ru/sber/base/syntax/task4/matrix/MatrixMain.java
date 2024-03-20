@@ -1,7 +1,5 @@
 package ru.sber.base.syntax.task4.matrix;
 
-import ru.sber.base.syntax.task4.matrix.Matrix;
-
 public class MatrixMain {
     public static void main(String[] args) {
         Matrix matrix1 = new Matrix();

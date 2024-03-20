@@ -1,7 +1,5 @@
 package ru.sber.base.syntax.task4.phone;
 
-import ru.sber.base.syntax.task4.phone.Phone;
-
 public class PhoneMain {
     public static void main(String[] args) {
         Phone phone = new Phone();
