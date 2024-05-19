@@ -10,8 +10,9 @@ public class FigureUtil {
         figure.perimeter();
     }
     public static void draw(Drawable figure) {
+        figure.draw(Color.BLACK);
     }
     public static void draw(Drawable figure, Color color) {
-
+        figure.draw(color);
     }
 }
